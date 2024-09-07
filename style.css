@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    
+
+}
+h1{
+    text-align: center;
+    background-color: grey;
+   
+    margin: 0;
+    padding: 20px;
+
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    width: 20%;
+}
+th{
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+footer {
+    position: absolute;
+    left: 350px;
+    border: 1px solid black;
+    bottom: absolute;
+}
