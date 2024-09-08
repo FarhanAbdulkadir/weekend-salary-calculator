@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
   <title>Salary Calculator</title>
 </head>
 <body>
@@ -12,17 +13,17 @@
   <main>
     <h2>Add Employee</h2>
 
-    <form>
+    <form id="EmployeeForm" onsubmit="submitForm(event)">
       <input data-testid="firstNameInput" type="text" name="FirstName" placeholder ="First Name" />
-      <input data-testid=lastNameInput" type="text" name="lastName" placeholder ="Last Name" />
+      <input data-testid="lastNameInput" type="text" name="lastName" placeholder="Last Name" />
       <input data-testid="idInput" type="text" name="id" placeholder ="ID" />
-      <input data-testid="titleInput" type="text" name="title" placeholder ="Title" />
+      <input data-testid="titleInput" type="text" name="title" placeholder="Title" />
       <input data-testid="annualSalaryInput" type="number" name="annualSalary" placeholder ="Annual Salary" />
-      <button data-testid="submitButton">Submit  </button>
+      <button data-testid="submitButton" type="submit" >Submit  </button>
     </form>
 
     <h2>Employees</h2>
-    <table>
+    <table id="employeeTable">
 
       <thead>
         <tr>
@@ -32,10 +33,12 @@
           <th> ID </th>
           <th>  Title  </th>
           <th>  Annual Salary </th>
-          <th> </th>
+          <th>  </th>
         </tr>
-
       </thead>
+      <tbody>
+
+      </tbody>
 
    </table>
 

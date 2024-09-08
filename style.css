@@ -32,4 +32,5 @@ footer {
     left: 350px;
     border: 1px solid black;
     bottom: absolute;
+    padding: 10px;
 }
