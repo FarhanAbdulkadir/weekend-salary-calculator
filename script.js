@@ -21,6 +21,7 @@ function addEmployee(firstName, lastName, id, title, annualSalary){
 
     totalMonthlySalary+= parseFloat(monthlySalary);
     updateMonthlySalary();
+    applyOverBudget();
 }
 
 function submitForm(event){
@@ -43,6 +44,8 @@ function handleDelete(button){
     let parentRow = button.closest('tr')
     parentRow.remove();
 
+   // applyOverBudget();
+
 }
 
 
@@ -50,4 +53,13 @@ function updateMonthlySalary(){
     document.querySelector('#totalMonthly').textContent = totalMonthlySalary.toFixed(2)
 }
 
+function applyOverBudget(){
+    const footer = document.getElementById('budgetFooter');
+    
+    if(totalMonthlySalary>20000){
+        footer.classList.add('over-budget');
+    } else {
+        footer.classList.remove('over-budget');
+    }
 
+}

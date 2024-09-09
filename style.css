@@ -6,7 +6,6 @@ body{
 h1{
     text-align: center;
     background-color: grey;
-   
     margin: 0;
     padding: 20px;
 
@@ -20,7 +19,7 @@ th, td {
     padding: 12px;
     text-align: left;
     border: 1px solid #ddd;
-    width: 20%;
+    
 }
 th{
     background-color: #f4f4f4;
@@ -28,9 +27,15 @@ th{
     font-weight: bold;
 }
 footer {
-    position: absolute;
-    left: 350px;
+    position: relative;
+    left: O;
+    width: 300px;
     border: 1px solid black;
-    bottom: absolute;
     padding: 10px;
+    text-align: left;
+}
+.over-budget {
+    background-color: red;
+    border-color: darkred;
+
 }
